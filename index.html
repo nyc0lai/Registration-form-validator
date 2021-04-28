@@ -9,16 +9,20 @@
 </head>
 <body>
 <div id="form">
-    <h3>Register With Us</h3>
+    <h2>Register With Us</h2>
     <label for="username">Username</label><br>
-    <input type="text" name="username" id="username" placeholder="Enter username"><br>
+    <input class="regform" type="text" name="username" id="username" placeholder="Enter username"><br>
+    <p id="usernameErr">Username must be at 3 characters</p>
     <label for="e-mail">Email</label><br>
-    <input type="email" name="email" id="e-mail" placeholder="Enter email"><br>
+    <input class="regform" type="email" name="email" id="e-mail" placeholder="Enter email"><br>
+    <p id="emailErr">Email is not valid</p>
     <label for="pswdmain">Password</label><br>
-    <input type="password" name="password" id="pswdmain" placeholder="Enter password"><br>
-    <label for="pswdsec">Consfirm Password</label><br>
-    <input type="password" name="password" id="pswdsec" placeholder="Enetr passwword again"><br>
-    <input type="submit" id="submit" value="Submit">
+    <input class="regform" type="password" name="password" id="pswdmain" placeholder="Enter password"><br>
+    <p id="passErr">Password must be at least 6 characters</p>
+    <label for="pswdsec">Confirm Password</label><br>
+    <input class="regform" type="password" name="password" id="pswdsec" placeholder="Enter password again"><br>
+    <p id="pass2Err">Password2 is required</p>
+    <input class="button" type="submit" id="submit" value="Submit">
 </div>
 
 
