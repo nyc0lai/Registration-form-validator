@@ -31,10 +31,11 @@ font-family: 'Open Sans', sans-serif;
     color: rgba(0, 0, 0, 0.700);
         
 }
+/*
 input[type="text"] {
     
   }
-
+*/
 label {
     font-size: 18px;
     color: rgba(0, 0, 0, 0.700);
