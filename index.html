@@ -9,23 +9,26 @@
     <title>SignIn</title>
 </head>
 <body>
-<div id="form">
+<div id="form-dev">
     <h2>Register With Us</h2>
-    <label for="username">Username</label><br>
-    <input class="regform" type="text" name="username" id="username" placeholder="Enter username"><br>
-    <p id="usernameErr">Username must be at 3 characters</p>
-    <label for="e-mail">Email</label><br>
-    <input class="regform" type="email" name="email" id="e-mail" placeholder="Enter email"><br>
-    <p id="emailErr">Email is not valid</p>
-    <label for="pswdmain">Password</label><br>
-    <input class="regform" type="password" name="password" id="pswdmain" placeholder="Enter password"><br>
-    <p id="passErr">Password must be at least 6 characters</p>
-    <label for="pswdsec">Confirm Password</label><br>
-    <input class="regform" type="password" name="password" id="pswdsec" placeholder="Enter password again"><br>
-    <p id="pass2Err">Password2 is required</p>
-    <input class="button" type="submit" id="submit" value="Submit">
+        <label for="username">Username</label><br>
+        <input class="regform" type="text" name="username" id="username" placeholder="Enter username" value="pula"><br>
+        <p class="error" id="usernameErr"></p>
+        <label for="e-mail">Email</label><br>
+        <input class="regform" type="email" id="e-mail" placeholder="Enter email"><br>
+        <p class="error" id="emailErr">Email is not valid</p>
+        <label for="pswdmain">Password</label><br>
+        <input class="regform" type="password" id="pswdmain" placeholder="Enter password"><br>
+        <p class="error" id="passErr">Password must be at least 6 characters</p>
+        <label for="pswdsec">Confirm Password</label><br>
+        <input class="regform" type="password" id="pswdsec" placeholder="Enter password again"><br>
+        <p class="error" id="pass2Err">Password2 is required</p>
+        <input class="button" type="submit" id="submit" value="Submit">
 </div>
+
+<div>
 <p id="da">milion dolars</p>
+</div>
 
 
 <script src="./reg_valid.js"></script>    

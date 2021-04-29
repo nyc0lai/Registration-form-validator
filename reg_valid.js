@@ -1,38 +1,39 @@
-const username = document.getElementById("username");
 
-document.getElementById("submit").addEventListener("click", test);
+var userName = document.getElementById("username");
+
+document.getElementById("da").innerHTML = userName.className;
+document.getElementById("submit").addEventListener("click", checkRequired);
 
 function checkRequired() { //to accept array of inputs
-    if(typeof username.value === array) {
-        document.getElementById("username").style.backgroundColor = "green";
-    }
-        else if(typeof username.value === undifined){
-        document.getElementById("username").style.backgroundColor = "red";
+    
+    checkLength(3, 12);
+};
 
-    }
+function checkLength(min, max) {//to check min and max length
+    var len = userName.value.length;
+    var minErr = "Username must be at 3 characters";
+    var maxErr = "Username must be maximum 12 symbols";
+    if(len < min)
+        showError("usernameErr", minErr);
+        else if(len > max)
+        showError("usernameErr", maxErr);
+        else
+        showSuccess("username");
+        
+};
+
+function checkEmail(email) { //to validate email with regex
 
 };
 
-function checkLength() { //to check min and max length
-
+function checkPasswordsMatch(pass1, pass2) { //to match confirm password
+ 
 };
 
-function checkEmail() { //to validate email with regex
-
+function showError(element, error) { //to display the error mesage
+document.getElementById(element).innerHTML = error;
 };
 
-function checkPasswordsMatch() { //to match confirm password
-
-};
-
-function showError() { //to display the error mesage
-
-};
-
-function showSuccess() { //to show success green outline
-
-};
-
-function test() {
-    document.getElementById("da").innerHTML = "o pula";
+function showSuccess(element) { //to show success green outline
+document.getElementById(element).style.border = "2px solid green";
 };
