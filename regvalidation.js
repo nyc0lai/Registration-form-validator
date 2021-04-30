@@ -24,8 +24,7 @@ function checkLength(element, min) {//to check min and max length
 function checkEmail(value) { //to validate email with regex
     const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     if(re.test(value))
-    return true;
-        else
+    return true; else
     return false;
 }
 
